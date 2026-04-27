@@ -101,12 +101,13 @@ The command returns to the prompt with no Lean messages.
 
 ## Repository structure
 
-```text
-ADIC_RSound_Replay.lean   Main Lean formalization
-README.md                 Repository description
-docs/lean-infoview-pass.png
-docs/powershell-pass.png
-```
+    ADIC_RSound_Replay.lean   Main Lean formalization
+    README.md                 Repository description
+    docs/lean-infoview-pass.png
+    docs/powershell-pass.png
+
+This repository is a minimal public replay artifact, not a full Lake project.
+The Lean file was checked in a local Lean 4.28.0 + Mathlib environment.
 
 ## Positioning
 
