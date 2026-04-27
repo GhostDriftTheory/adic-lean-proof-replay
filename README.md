@@ -26,6 +26,18 @@ acceptance soundness
 
 The goal is not to verify an entire deployed software system, but to provide a mechanically checked formal core for the replay verification argument used in ADIC.
 
+## DAG representation note
+
+The DAG layer in this repository is formalized as a replay-oriented
+row-list lowering layer. The compiler-correctness lemmas establish
+correspondence between DAG-level syntax and the compiled replay-row
+representation used by the verifier.
+
+Accordingly, the DAG results should be read as row-list lowering
+correctness / replay representation correspondence, not as a full
+general-purpose compiler correctness theorem for arbitrary deployed
+software.
+
 ## Main theorem direction
 
 At a high level, the file establishes that if an ADIC certificate is accepted by the replay verifier, then the corresponding semantic validity condition follows.
