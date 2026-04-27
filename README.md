@@ -91,9 +91,6 @@ The command returns to the prompt with no Lean messages.
 
 ```text
 ADIC_RSound_Replay.lean   Main Lean formalization
-lakefile.toml             Lake project file
-lake-manifest.json        Lake dependency manifest
-lean-toolchain            Lean toolchain version
 README.md                 Repository description
 docs/lean-infoview-pass.png
 docs/powershell-pass.png
