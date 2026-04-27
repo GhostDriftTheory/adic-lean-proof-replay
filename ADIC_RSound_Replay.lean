@@ -431,7 +431,7 @@ theorem gc_alpha_gamma (D : DPos) : GaloisConnection (alpha D) (gamma D) := by
         simpa [gamma, div_eq_mul_inv, mul_assoc, mul_left_comm, mul_comm, ne_of_gt hDpos] using h0
       exact (Int.ceil_le).2 this
 
-/-- The key insertion axiom: `α (γ I) = I`. -/
+/-- The key insertion identity: `α (γ I) = I`. -/
 lemma alpha_gamma_id (D : DPos) (I : IEnc D) : alpha D (gamma D I) = I := by
   cases I with
   | mk lo hi h =>
@@ -541,11 +541,6 @@ end Division
 
 /-!
 Section: Primitive R-SOUND (Σ_prim)
-
-NOTE: This revision fixes the structural Lean issues first: noncomputable Real data,
-Preorder instances for GaloisConnection, extensionality lemmas, malformed coercions,
-and the invalid total constructors for witness-based intervals.
-The heavy arithmetic proofs in mul/inv/sqrt remain the main area to validate locally.
 
 We formalize R-SOUND for the concrete primitives:
   +, -, ×, inv, sqrt, relu
@@ -1145,10 +1140,6 @@ Core chain:
   -> specification replay enclosure
   -> root upper-bound soundness
   -> real-valued semantic validity
-
-This is intentionally introduced first as a Prop-level replay core.
-Executable Boolean replay/checking should be added only after these
-semantic relations are stabilized.
 -/
 
 namespace ReplayCore
