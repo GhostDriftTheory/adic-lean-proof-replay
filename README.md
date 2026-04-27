@@ -2,6 +2,8 @@
 
 This repository contains a Lean 4 formalization of replay-based soundness for ADIC certificates.
 
+Note: In this repository, ADIC denotes the audit/verifier architecture studied in the accompanying paper; it is unrelated to p-adic numbers.
+
 The main Lean file is:
 
 ```text
@@ -76,6 +78,37 @@ The GitHub Actions workflow runs the same Lean/Lake verification on every push a
 
 Screenshots may be kept as supplementary evidence, but they are not the reproducibility mechanism.
 
-## Related paper
+## Paper-to-Lean correspondence
+
+The accompanying paper contains a full Lean correspondence table. The key
+identifiers can be checked directly in:
+
+```text
+ADIC_RSound_Replay.lean
+```
+
+Representative grep targets are:
+
+| Paper statement | Lean identifier(s) |
+|---|---|
+| Galois insertion | `gc_alpha_gamma`, `alpha_gamma_strict` |
+| Truth preservation of tau | `tau_preserves`, `tau_truth` |
+| FDIV/CDIV witness bounds | `fdiv_bound`, `cdiv_bound` |
+| R-SOUND for addition/subtraction | `rsound_add`, `rsound_sub` |
+| R-SOUND for multiplication | `rsound_mul`, `rsound_mul_closed` |
+| R-SOUND for inverse | `rsound_inv`, `rsound_inv_closed` |
+| R-SOUND for square root | `rsound_sqrt`, `rsound_sqrt_closed` |
+| R-SOUND for ReLU | `rsound_relu` |
+| Replay verifier soundness | `verifierBool_sound`, `verifierBool_sound_unique` |
+| DAG replay soundness | `verifierDAGBool_direct_sound`, `dagCert_end_to_end_sound` |
+| Structural cost bound | `verifierBoolStructuralCost_eq_size`, `replayVerifierStructuralCost_linear` |
+
+## Related paper and archival record
 
 Preprint: URL to be added.
+
+Archival DOI:
+
+```text
+10.5281/zenodo.19808324
+```
