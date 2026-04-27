@@ -50,8 +50,7 @@ This project uses:
 
 ```text
 Lean 4.28.0
-Mathlib
-Lake
+Mathlib available in the local Lean environment
 ```
 
 ## Verification
@@ -59,9 +58,7 @@ Lake
 Run:
 
 ```powershell
-lake update
-lake exe cache get
-lake env lean ".\ADIC_RSound_Replay.lean"
+lean ".\ADIC_RSound_Replay.lean"
 ```
 
 Successful verification means the final command returns to the prompt with no output.
@@ -69,7 +66,7 @@ Successful verification means the final command returns to the prompt with no ou
 Example:
 
 ```powershell
-PS> lake env lean ".\ADIC_RSound_Replay.lean"
+PS> lean ".\ADIC_RSound_Replay.lean"
 PS>
 ```
 
@@ -92,7 +89,7 @@ No problems have been detected in the workspace.
 The file also passes from PowerShell:
 
 ```powershell
-lake env lean ".\ADIC_RSound_Replay.lean"
+lean ".\ADIC_RSound_Replay.lean"
 ```
 
 The command returns to the prompt with no Lean messages.
@@ -124,7 +121,7 @@ Preprint: URL to be added.
 The current file has been checked with:
 
 ```powershell
-lake env lean ".\ADIC_RSound_Replay.lean"
+lean ".\ADIC_RSound_Replay.lean"
 ```
 
 and passes when the command returns with no Lean messages.
