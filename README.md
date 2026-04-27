@@ -73,7 +73,7 @@ The file reports:
 No problems have been detected in the workspace.
 ```
 
-![Lean InfoView verification](docs/lean-infoview-pass.png)
+![Lean InfoView verification](docslean-infoview-pass.png)
 
 ### Command-line verification
 
@@ -85,7 +85,7 @@ lake env lean ".\ADIC_RSound_Replay.lean"
 
 The command returns to the prompt with no Lean messages.
 
-![PowerShell verification](docs/powershell-pass.png)
+![PowerShell verification](docspowershell-pass.png)
 
 ## Repository structure
 
