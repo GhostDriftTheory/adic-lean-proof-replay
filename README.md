@@ -105,7 +105,7 @@ Representative grep targets are:
 
 ## Related paper and archival record
 
-Preprint: URL to be added.
+Preprint: [Verifier Closure for Fixed-Core Interval Programs: A Certified Replay Architecture in Lean4](https://zenodo.org/records/19821808)
 
 Archival DOI:
 
