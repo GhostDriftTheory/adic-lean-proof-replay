@@ -1,4 +1,5 @@
 # ADIC R-SOUND Replay Verification
+[![Lean CI](https://github.com/GhostDriftTheory/adic-lean-proof-replay/actions/workflows/ci.yml/badge.svg)](https://github.com/GhostDriftTheory/adic-lean-proof-replay/actions/workflows/ci.yml)
 
 This repository contains a Lean 4 formalization of replay-based soundness for ADIC certificates.
 
