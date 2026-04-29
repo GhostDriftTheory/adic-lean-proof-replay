@@ -9,7 +9,7 @@ In the ADIC architecture, this provides the formal core for preserving accountab
 
 ## Conceptual flow of ADIC replay verification
 
-![Conceptual flow of ADIC replay verification](./dag_level_specification_and_validation_process.png)
+![Conceptual flow of ADIC replay verification](./adic-replay-verification-flow.png)
 
 Note: In this repository, ADIC denotes the audit/verifier architecture studied in the accompanying paper; it is unrelated to p-adic numbers.
 
