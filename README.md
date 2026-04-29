@@ -1,7 +1,15 @@
 # ADIC R-SOUND Replay Verification
 [![Lean CI](https://github.com/GhostDriftTheory/adic-lean-proof-replay/actions/workflows/ci.yml/badge.svg)](https://github.com/GhostDriftTheory/adic-lean-proof-replay/actions/workflows/ci.yml)
 
-This repository contains a Lean 4 formalization of replay-based soundness for ADIC certificates.
+This repository contains a reproducible Lean 4 proof artifact for ADIC replay verification.
+
+It shows, in a mechanically checked form, that when an ADIC replay certificate is accepted by the verifier, the corresponding semantic-validity condition follows.
+
+In the ADIC architecture, this provides the formal core for preserving accountability after deployment.
+
+## Conceptual flow of ADIC replay verification
+
+![Conceptual flow of ADIC replay verification](./dag_level_specification_and_validation_process.png)
 
 Note: In this repository, ADIC denotes the audit/verifier architecture studied in the accompanying paper; it is unrelated to p-adic numbers.
 
